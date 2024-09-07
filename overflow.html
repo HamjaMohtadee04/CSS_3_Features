@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3 ellipsis etc</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 3px solid steelblue;
+            /* overflow: scroll;
+            overflow-y: scroll; */
+            overflow: auto;
+        }
+        #box1{
+            /* overflow: hidden; */
+            /* overflow: scroll;
+            overflow-x: scroll; */
+
+        }
+.ellipsis{
+    width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 2px solid steelblue;
+  text-overflow: ellipsis;
+  /* text-overflow: clip; */
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <p title="elipsis" class="ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, aliquam?</p>
+    </header>
+    <section>
+        <div id="box1" class="box">
+            <h3>My text box 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aliquam est aperiam voluptates pariatur iusto iste doloremque atque cum in.</p>
+        </div>
+        <div class="box">
+            <h3>My text box 2</h3>
+            <p>Eligendi ducimus laboriosam ipsa suscipit tempora totam ratione, tenetur saepe, delectus, esse nihil quae distinctio sunt harum perferendis ea vel.</p>
+        </div>
+        <div class="box">
+            <h3>My text box 2</h3>
+            <p>Eligendi ducimus laboriosam ipsa suscipit tempora totam ratione, tenetur saepe, delectus, esse nihil quae distinctio sunt harum perferendis ea vel.</p>
+        </div>
+    </section>
+</body>
+</html>
