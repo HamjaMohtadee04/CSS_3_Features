@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables</title>
+    <style>
+        :root{
+            --primary-color:steelblue;
+            --secondary-color: blue;
+            --font-size: 20px;
+        }
+        h1{
+            color: var(--primary-color);
+        }
+        h5{
+            background-color:var(--secondary-color);
+        }
+        .box{
+            border: 2px solid var(--primary-color);
+            /* width: 400px; */
+            width: calc(100% -300px);
+        }
+        .box p{
+            color: steelblue;
+            font-size: var(--font-size);
+        }
+        .sidebar{
+            background-color: lightgray;
+        }
+        .content{
+        background-color: lightblue;
+        }
+        .container{
+            display: grid;
+            gap: 20px;
+            grid-template-rows: 500px;
+            grid-template-columns: 200px calc(100% - 200px - 20px);
+        }
+    </style>
+</head>
+<body>
+    <h1>my custom property</h1>
+    <h5>also known common variables</h5>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ex exercitationem ab esse laborum porro cupiditate neque, et corporis nesciunt sapiente fugiat. Iure fuga impedit nam eius odio, veritatis dolore libero fugiat molestias. Eveniet ea, adipisci voluptate harum eum incidunt odit vitae, blanditiis nostrum quia rem omnis obcaecati quod provident?</p>
+    </div>
+    <div class="container">
+        <div class="sidebar">Sidear</div>
+        <div class="content">Main Content</div>
+
+    </div>
+</body>
+</html>
